@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+.env
+*.log
+.idea
+.vscode
+www/
+ios/App/Pods/
+ios/App/build/
+ios/DerivedData/

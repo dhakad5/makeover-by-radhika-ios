@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220">
+  <defs>
+    <linearGradient id="wm-rg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#a04a5f"/>
+      <stop offset="100%" stop-color="#5a1228"/>
+    </linearGradient>
+    <linearGradient id="wm-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#f4d77a"/>
+      <stop offset="50%"  stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Crown above the wordmark -->
+  <g transform="translate(300,38)">
+    <path d="M -28 0 L -28 -10 L -18 6 L -9 -14 L 0 10 L 9 -14 L 18 6 L 28 -10 L 28 0 Z"
+          fill="url(#wm-gold)" stroke="#7a5b10" stroke-width="0.8" stroke-linejoin="round"/>
+    <rect x="-28" y="0" width="56" height="6" fill="url(#wm-gold)" stroke="#7a5b10" stroke-width="0.6"/>
+    <circle cx="0"   cy="-9"  r="2.6" fill="#c43c5b"/>
+    <circle cx="-18" cy="-4"  r="1.8" fill="#c43c5b"/>
+    <circle cx="18"  cy="-4"  r="1.8" fill="#c43c5b"/>
+  </g>
+
+  <!-- Brand wordmark — Cinzel (Roman serif), uppercase, wide tracked -->
+  <text x="300" y="120" text-anchor="middle"
+        font-family="Cinzel, Trajan Pro, 'Times New Roman', Georgia, serif"
+        font-size="56" font-weight="700"
+        fill="url(#wm-rg)" letter-spacing="16">MAKEOVER</text>
+
+  <!-- Gold ornamental divider with sparkle -->
+  <g transform="translate(300,148)">
+    <line x1="-110" y1="0" x2="-14" y2="0" stroke="url(#wm-gold)" stroke-width="1"/>
+    <line x1="14"   y1="0" x2="110"  y2="0" stroke="url(#wm-gold)" stroke-width="1"/>
+    <path d="M 0 -6 l 1.6 4.5 l 4.5 1.6 l -4.5 1.6 l -1.6 4.5 l -1.6 -4.5 l -4.5 -1.6 l 4.5 -1.6 z"
+          fill="url(#wm-gold)"/>
+  </g>
+
+  <!-- Secondary line -->
+  <text x="300" y="180" text-anchor="middle"
+        font-family="Cinzel, Trajan Pro, 'Times New Roman', Georgia, serif"
+        font-size="22" font-weight="500"
+        fill="#b76e79" letter-spacing="14">BY  RADHIKA</text>
+
+  <!-- Tagline -->
+  <text x="300" y="208" text-anchor="middle"
+        font-family="'Poppins', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9" font-weight="500"
+        fill="#b76e79" letter-spacing="5">BRIDAL  •  PARTY  •  FESTIVE  MAKEUP  STUDIO</text>
+</svg>

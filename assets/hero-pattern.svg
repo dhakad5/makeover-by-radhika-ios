@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1f2"/>
+      <stop offset="50%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#f5d0d6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <rect width="600" height="400" fill="url(#glow)"/>
+
+  <!-- decorative floral swirls -->
+  <g stroke="#b76e79" stroke-width="1.5" fill="none" opacity="0.45">
+    <path d="M40 350 C 100 250, 180 320, 240 240 S 380 180, 460 240 S 580 200, 600 260"/>
+    <path d="M0 80 C 80 30, 160 110, 260 60 S 420 130, 520 70"/>
+  </g>
+
+  <!-- flowers -->
+  <g>
+    <g transform="translate(80,90)">
+      <circle r="6" fill="#d4a017"/>
+      <g fill="#f9a8b4">
+        <ellipse cx="0" cy="-14" rx="6" ry="10"/>
+        <ellipse cx="0" cy="14" rx="6" ry="10"/>
+        <ellipse cx="-14" cy="0" rx="10" ry="6"/>
+        <ellipse cx="14" cy="0" rx="10" ry="6"/>
+      </g>
+    </g>
+    <g transform="translate(520,330)">
+      <circle r="6" fill="#d4a017"/>
+      <g fill="#f9a8b4">
+        <ellipse cx="0" cy="-14" rx="6" ry="10"/>
+        <ellipse cx="0" cy="14" rx="6" ry="10"/>
+        <ellipse cx="-14" cy="0" rx="10" ry="6"/>
+        <ellipse cx="14" cy="0" rx="10" ry="6"/>
+      </g>
+    </g>
+    <g transform="translate(470,80)">
+      <circle r="5" fill="#d4a017"/>
+      <g fill="#fbbac4">
+        <ellipse cx="0" cy="-11" rx="5" ry="8"/>
+        <ellipse cx="0" cy="11" rx="5" ry="8"/>
+        <ellipse cx="-11" cy="0" rx="8" ry="5"/>
+        <ellipse cx="11" cy="0" rx="8" ry="5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#d4a017">
+    <path d="M300 100 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3 z"/>
+    <path d="M180 220 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 l6 -2 z"/>
+    <path d="M420 200 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 l6 -2 z"/>
+  </g>
+
+  <!-- mirror + brushes silhouette -->
+  <g transform="translate(300,230)" opacity="0.9">
+    <ellipse cx="0" cy="0" rx="70" ry="85" fill="#fff8f0" stroke="#b76e79" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="60" ry="75" fill="#fde2e4"/>
+    <rect x="-12" y="80" width="24" height="40" fill="#b76e79"/>
+    <rect x="-18" y="115" width="36" height="10" rx="3" fill="#8b1e3f"/>
+    <!-- brush 1 -->
+    <g transform="translate(-130,40) rotate(-25)">
+      <rect x="-4" y="0" width="8" height="60" fill="#8b1e3f"/>
+      <rect x="-6" y="-12" width="12" height="14" rx="2" fill="#d4a017"/>
+      <ellipse cx="0" cy="-22" rx="10" ry="14" fill="#fce7f3"/>
+    </g>
+    <!-- brush 2 -->
+    <g transform="translate(130,40) rotate(25)">
+      <rect x="-4" y="0" width="8" height="60" fill="#8b1e3f"/>
+      <rect x="-6" y="-12" width="12" height="14" rx="2" fill="#d4a017"/>
+      <ellipse cx="0" cy="-22" rx="8" ry="14" fill="#fbbac4"/>
+    </g>
+  </g>
+</svg>

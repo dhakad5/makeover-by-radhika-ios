@@ -1,0 +1,49 @@
+/* ============================================================
+   iOS (Capacitor) overrides — only active when <html class="is-native">
+   (set by native-io.js). The desktop/web look is untouched.
+   ============================================================ */
+html.is-native {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --topbar-base: 64px;
+  --topbar-h: calc(var(--topbar-base) + var(--safe-top));
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+html.is-native body {
+  -webkit-user-select: none; user-select: none;      /* app-like: no accidental text selection on tap/hold */
+  -webkit-touch-callout: none;
+  overscroll-behavior-y: none;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+html.is-native input, html.is-native textarea, html.is-native select {
+  -webkit-user-select: text; user-select: text;
+  font-size: 16px !important;                         /* <16px makes iOS zoom the page on focus */
+}
+
+/* Notch / Dynamic Island */
+html.is-native .app-topbar { padding-top: var(--safe-top); }
+html.is-native .topbar-inner { height: var(--topbar-base); }
+
+/* 100vh is taller than the visible area in WKWebView — use dynamic viewport units */
+html.is-native .app-shell { min-height: calc(100dvh - var(--topbar-h)); }
+html.is-native .app-sidebar { height: calc(100dvh - var(--topbar-h)); padding-bottom: calc(18px + var(--safe-bottom)); }
+html.is-native .app-main { padding-bottom: calc(90px + var(--safe-bottom)); }
+
+/* Phone-sized: keep the season picker reachable (it is hidden <1024px on the web layout),
+   drop desktop-only chrome */
+@media (max-width: 1023px) {
+  html.is-native .topbar-actions .season-pill { display: flex; }
+  html.is-native .topbar-actions .season-pill select { min-width: 0; max-width: 96px; }
+  html.is-native #shortcutsBtn,
+  html.is-native #backendStatusBadgeTop { display: none; }
+  html.is-native .topbar-actions { gap: 6px; }
+}
+@media (max-width: 480px) {
+  html.is-native #auditLogBtn { display: none; }
+  html.is-native .topbar-actions .btn-primary { padding-left: 12px; padding-right: 12px; white-space: nowrap; }
+}
+
+/* Floating action button & modals clear the home indicator */
+html.is-native .fab { bottom: calc(20px + var(--safe-bottom)); }

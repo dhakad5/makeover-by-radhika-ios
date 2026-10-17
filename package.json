@@ -1,0 +1,19 @@
+{
+  "name": "makeover-by-radhika-ios",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Makeover by Radhika — iOS app (Capacitor wrapper around the offline web app)",
+  "scripts": {
+    "build:www": "./scripts/build-www.sh",
+    "sync": "./scripts/build-www.sh && npx cap sync ios",
+    "open": "npx cap open ios",
+    "ios": "npm run sync && npm run open"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/ios": "^8.5.3",
+    "@capacitor/share": "^8.0.3"
+  }
+}
